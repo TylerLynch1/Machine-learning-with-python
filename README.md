@@ -12,7 +12,7 @@ CS related classes:
 <br>SAT 3611 - Infrastructure Service Admin
 <br>SAT 4283 - Info Governance & Risk Mgmt
 <br>SAT 4816 - Digital Forensics
-<br>2023 - Undergrad
+<br><b>2023 - Undergrad
 <br>CS 4723 - Network Security
 <br>EET 4501 - Applied Machine Learning
 <br>SAT 3310 - Scripting Admin & Automation
@@ -21,7 +21,7 @@ CS related classes:
 <br>SAT 5111 - Security and Privacy
 <br>CS 2311 - Discrete Structures
 <br>CS 5001 - Cybersecurity Policy and Law
-<br>2024 - Graduate School
+<br><b>2024 - Graduate School
 <br>SAT 5520 - Machine Learning in Security
 <br>SAT 5980 - Blockchain Fundamental & Apps
 <br>UN 5550 - Introduction to Data Science
