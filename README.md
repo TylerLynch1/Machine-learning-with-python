@@ -1,2 +1,8 @@
-# College
-What I did in college
+<!DOCTYPE html>
+<html>
+<head>
+<title>College</title>
+</head>
+</html>
+
+
