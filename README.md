@@ -2,7 +2,7 @@
 
 CS related classes:
 
-2021 - Undergrad
+<b>2021 - Undergrad</b>
 <br>CS 1121 - Intro to Programming I
 
 <br>2022 - Undergrad
