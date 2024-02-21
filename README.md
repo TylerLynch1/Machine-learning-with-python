@@ -3,9 +3,9 @@
 CS related classes:
 
 2021 - Undergrad
-CS 1121 - Intro to Programming I
+<br>CS 1121 - Intro to Programming I
 
-</br>2022 - Undergrad
+<br>2022 - Undergrad
 CS 1122 - Intro to Programming II
 SAT 3820 - Wireless System Administration
 SAT 4812 - Cyber Security II
