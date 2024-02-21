@@ -4,7 +4,6 @@ CS related classes:
 
 <b>2021 - Undergrad</b>
 <br>CS 1121 - Intro to Programming I
-
 <br><b>2022 - Undergrad</b>
 <br>CS 1122 - Intro to Programming II
 <br>SAT 3820 - Wireless System Administration
@@ -13,7 +12,6 @@ CS related classes:
 <br>SAT 3611 - Infrastructure Service Admin
 <br>SAT 4283 - Info Governance & Risk Mgmt
 <br>SAT 4816 - Digital Forensics
-
 <br>2023 - Undergrad
 <br>CS 4723 - Network Security
 <br>EET 4501 - Applied Machine Learning
@@ -23,7 +21,6 @@ CS related classes:
 <br>SAT 5111 - Security and Privacy
 <br>CS 2311 - Discrete Structures
 <br>CS 5001 - Cybersecurity Policy and Law
-
 <br>2024 - Graduate School
 <br>SAT 5520 - Machine Learning in Security
 <br>SAT 5980 - Blockchain Fundamental & Apps
