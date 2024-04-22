@@ -1,6 +1,6 @@
 # Machine Learning With Python
 This is a basic machine learning repository. It contains basic supervised learning algorithms that can be used as a point of reference for beginners to ML. Data preprocessing is not shown, nor are many import statements, only building the model and printing basic evaluation metrics. All code is in Python.
-<br><br>This repo contains one folder, [Code](https://github.com/TylerLynch1/Machine-learning-with-python/tree/ea2a6dada31db11a9f6cd5dc74961d65fae5225a/Code)
+<br><br>This repo contains one folder, [Code](https://github.com/TylerLynch1/Machine-learning-with-python/tree/ea2a6dada31db11a9f6cd5dc74961d65fae5225a/Code).
 <br>The ML algorithms in the folder are:
 - [Decision tree](https://github.com/TylerLynch1/Machine-learning-with-python/blob/3b18f8078eeb16fdf029968f26f947d445bd8eca/Code/DecisionTree.py)
 - [Decision Tree with k-fold cross validation](https://github.com/TylerLynch1/Machine-learning-with-python/blob/3b18f8078eeb16fdf029968f26f947d445bd8eca/Code/DecisionTreeWithK-Fold.py)
