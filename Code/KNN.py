@@ -1,9 +1,10 @@
 # Record the start time for measuring training duration
 start_time = time.time()
 
-# train model
+# Train model
 knn = KNeighborsClassifier(n_neighbors=5)
-# fit model
+
+# Fit model
 knn.fit(x_train, y_train)
 
 # Check if the K-Nearest Neighbors model is trained before making predictions
@@ -21,7 +22,7 @@ if knn:
 else:
   print('KNN model was not successfully trained.')
 
-# print time
+# Print time
 knn_seconds = time.time() - start_time
 minutes = knn_seconds / 60
 print('Time to run: {:.2f} seconds'.format(knn_seconds), '({:.2f} minutes)'.format(minutes))
