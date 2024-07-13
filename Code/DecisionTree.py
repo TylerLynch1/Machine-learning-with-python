@@ -11,9 +11,9 @@ dt.fit(x_train, y_train)
 if dt:
   try:
     print('Decision Tree model trained!')
-    # make predictions
+    # Make predictions
     y_pred = dt.predict(x_test)
-    # print metrics
+    # Print metrics
     dt_accuracy, dt_precision, dt_recall, dt_f1score = accuracy_score(y_test, y_pred), precision_score(y_test, y_pred), recall_score(y_test, y_pred), fbeta_score(y_test, y_pred, beta=2)
     print('DT Accuracy: {:.2f}%'.format(dt_accuracy * 100), '\nDT Precision: {:.2f}%'.format(dt_precision * 100),
           '\nDT Recall: {:.2f}%'.format(dt_recall * 100), '\nDT F1-score: {:.2f}%'.format(dt_f1score * 100))
