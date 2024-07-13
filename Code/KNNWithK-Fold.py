@@ -1,5 +1,6 @@
+# Record the start time for measuring training duration
 start_time = time.time()
-# |------------------------------------------------------ K-Nearest Neighbors Classification (With Cross-validation) ------------------------------------------------------|
+
 # define the number of folds for cross-validation
 num_folds = 5  # You can adjust the number of folds as needed
 
@@ -8,9 +9,11 @@ kf = KFold(n_splits=num_folds, shuffle=True, random_state=42)
 
 # train model
 knn = KNeighborsClassifier(n_neighbors=5)
+
 # fit model
 knn.fit(x_train, y_train)
 
+# Check if the K model is trained before performing cross-validation
 if knn:
   try:
     # perform cross-validation for the Decision Tree model
@@ -23,7 +26,6 @@ if knn:
 else:
   print('KNN model was not successfully trained.')
 
-# |------------------------------------------------------ CALCULATE STATISTICS ------------------------------------------------------|
 # print the cross-validation results
 print('Cross-Validation With Accuracy: {:.2f}% (+/- {:.2f}%)'.format(knn_accuracy.mean() * 100, knn_accuracy.std() * 2))
 print('Cross-Validation With Precision: {:.2f}% (+/- {:.2f}%)'.format(knn_precision.mean() * 100, knn_precision.std() * 2))
