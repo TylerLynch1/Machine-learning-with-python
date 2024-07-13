@@ -1,3 +1,7 @@
+import time
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score, precision_score, recall_score, fbeta_score
+
 # Record the start time for measuring training duration
 start_time = time.time()
 
