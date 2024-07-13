@@ -22,7 +22,7 @@ knn.fit(x_train, y_train)
 # Check if the model is trained before performing cross-validation
 if knn:
   try:
-    # perform cross-validation for the Decision Tree model
+    # Perform cross-validation
     knn_accuracy = cross_val_score(knn, x_train, y_train, cv=kf, scoring='accuracy')
     knn_precision = cross_val_score(knn, x_train, y_train, cv=kf, scoring='precision')
     knn_recall = cross_val_score(knn, x_train, y_train, cv=kf, scoring='recall')
