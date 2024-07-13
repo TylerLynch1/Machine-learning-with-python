@@ -27,6 +27,7 @@ if dt:
 else:
   print('Decision Tree model was not successfully trained.')
 
+# Print time
 dt_seconds = time.time() - start_time
 minutes = dt_seconds / 60
 print('Time to run: {:.2f} seconds'.format(dt_seconds), '({:.2f} minutes)'.format(minutes))
