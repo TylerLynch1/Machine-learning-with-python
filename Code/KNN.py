@@ -11,9 +11,9 @@ knn.fit(x_train, y_train)
 if knn:
   try:
     print('K-Nearest Neighbors model trained!')
-    # make predictions
+    # Make predictions
     y_pred = knn.predict(x_test)
-    # print metrics
+    # Print metrics
     knn_accuracy, knn_precision, knn_recall, knn_f1score = accuracy_score(y_test, y_pred), precision_score(y_test, y_pred), recall_score(y_test, y_pred), fbeta_score(y_test, y_pred, beta=2)
     print('Accuracy: {:.2f}%'.format(knn_accuracy * 100), '\nPrecision: {:.2f}%'.format(knn_precision * 100),
           '\nRecall: {:.2f}%'.format(knn_recall * 100), '\nF1-score: {:.2f}%'.format(knn_f1score * 100))
