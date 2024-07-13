@@ -22,7 +22,7 @@ dt.fit(x_train, y_train)
 # Check if the model is trained before performing cross-validation
 if dt:
   try:
-    # perform cross-validation for the Decision Tree model
+    # Perform cross-validation
     dt_accuracy = cross_val_score(dt, x_train, y_train, cv=kf, scoring='accuracy')
     dt_precision = cross_val_score(dt, x_train, y_train, cv=kf, scoring='precision')
     dt_recall = cross_val_score(dt, x_train, y_train, cv=kf, scoring='recall')
