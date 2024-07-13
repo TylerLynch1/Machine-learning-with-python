@@ -11,9 +11,9 @@ logreg.fit(x_train, y_train
 if logreg:
   try:
     print('Logistic Regression model trained!')
-    # make predictions
+    # Make predictions
     y_pred = logreg.predict(x_test)
-    # print metrics
+    # Print metrics
     lr_accuracy, lr_precision, lr_recall, lr_f1score = accuracy_score(y_test, y_pred), precision_score(y_test, y_pred), recall_score(y_test, y_pred), fbeta_score(y_test, y_pred, beta=2)
     print('LR Accuracy: {:.2f}%'.format(lr_accuracy * 100), '\nLR Precision: {:.2f}%'.format(lr_precision * 100),
           '\nLR Recall: {:.2f}%'.format(lr_recall * 100), '\nLR F1-score: {:.2f}%'.format(lr_f1score * 100))
