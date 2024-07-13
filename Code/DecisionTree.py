@@ -7,7 +7,7 @@ dt = DecisionTreeClassifier(random_state=42)
 # Train model
 dt.fit(x_train, y_train)
 
-# Evaluate and print metrics for the trained Decision Tree model, if it exists
+# Check if the model is trained before making predictions
 if dt:
   try:
     print('Decision Tree model trained!')
