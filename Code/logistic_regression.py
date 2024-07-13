@@ -1,10 +1,13 @@
+# Record the start time for measuring training duration
 start_time = time.time()
-# |------------------------------------------------------ Logistic Regression ------------------------------------------------------|
-# define model
+
+# Define model
 logreg = LogisticRegression()
-# train model
-logreg.fit(x_train, y_train)
-# |------------------------------------------------------ CALCULATE STATISTICS ------------------------------------------------------|
+
+# Train model
+logreg.fit(x_train, y_train
+
+# Check if the model is trained before making predictions
 if logreg:
   try:
     print('Logistic Regression model trained!')
@@ -19,6 +22,7 @@ if logreg:
 else:
   print('Logistic Regression model was not successfully trained.')
 
+# Print time
 lr_seconds = time.time() - start_time
 minutes = lr_seconds / 60
 print('Time to run: {:.2f} seconds'.format(lr_seconds), '({:.2f} minutes)'.format(minutes))
