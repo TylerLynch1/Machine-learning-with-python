@@ -1,3 +1,8 @@
+# Imports
+import time
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, precision_score, recall_score, fbeta_score
+
 # Record the start time for measuring training duration
 start_time = time.time()
 
@@ -5,7 +10,7 @@ start_time = time.time()
 logreg = LogisticRegression()
 
 # Train model
-logreg.fit(x_train, y_train
+logreg.fit(x_train, y_train)
 
 # Check if the model is trained before making predictions
 if logreg:
