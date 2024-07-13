@@ -1,3 +1,8 @@
+import time
+from sklearn.model_selection import KFold, cross_val_score
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
 # Record the start time for measuring training duration
 start_time = time.time()
 
