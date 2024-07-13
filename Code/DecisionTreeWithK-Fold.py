@@ -1,15 +1,16 @@
 # Record the start time for measuring training duration
 start_time = time.time()
 
-# define the number of folds for cross-validation
+# Define the number of folds for cross-validation
 num_folds = 5  # you can adjust the number of folds as needed
 
-# define the cross-validation strategy
+# Define the cross-validation strategy
 kf = KFold(n_splits=num_folds, shuffle=True, random_state=42)
 
-# define model
+# Define model
 dt = DecisionTreeClassifier(random_state=42)
-# train model
+
+# Train model
 dt.fit(x_train, y_train)
 
 # Check if the Decision Tree model is trained before performing cross-validation
@@ -25,13 +26,13 @@ if dt:
 else:
   print('Decision Tree model was not successfully trained.')
   
-# print the cross-validation results
+# Print the cross-validation results
 print('Cross-Validation Accuracy: {:.2f}% (+/- {:.2f}%)'.format(dt_accuracy.mean() * 100, dt_accuracy.std() * 2))
 print('Cross-Validation Precision: {:.2f}% (+/- {:.2f}%)'.format(dt_precision.mean() * 100, dt_precision.std() * 2))
 print('Cross-Validation Recall: {:.2f}% (+/- {:.2f}%)'.format(dt_recall.mean() * 100, dt_recall.std() * 2))
 print('Cross-Validation F1-score: {:.2f}% (+/- {:.2f}%)'.format(dt_f1score.mean() * 100, dt_f1score.std() * 2))
 
-# print time
+# Print time
 dt_seconds = time.time() - start_time
 minutes = dt_seconds / 60
 print('Time to run: {:.2f} seconds'.format(dt_seconds), '({:.2f} minutes)'.format(minutes))
