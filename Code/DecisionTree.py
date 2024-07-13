@@ -1,11 +1,13 @@
+# Record the start time for measuring training duration
 start_time = time.time()
-# |------------------------------------------------------ Decision Tree Classification ------------------------------------------------------|
-# define model
+
+# create model
 dt = DecisionTreeClassifier(random_state=42)
+
 # train model
 dt.fit(x_train, y_train)
-# |------------------------------------------------------ CALCULATE STATISTICS ------------------------------------------------------|
 
+# Evaluate and print metrics for the trained Decision Tree model, if it exists
 if dt:
   try:
     print('Decision Tree model trained!')
