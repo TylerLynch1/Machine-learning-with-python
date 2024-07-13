@@ -22,7 +22,7 @@ logreg.fit(x_train, y_train)
 # Check if the model is trained before performing cross-validation
 if logreg:
   try:
-    # perform cross-validation for the Logistic Regression model
+    # Perform cross-validation
     lr_accuracy = cross_val_score(logreg, x_train, y_train, cv=kf, scoring='accuracy')
     lr_precision = cross_val_score(logreg, x_train, y_train, cv=kf, scoring='precision')
     lr_recall = cross_val_score(logreg, x_train, y_train, cv=kf, scoring='recall')
