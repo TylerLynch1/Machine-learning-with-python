@@ -1,19 +1,19 @@
 # Record the start time for measuring training duration
 start_time = time.time()
 
-# define the number of folds for cross-validation
+# Define the number of folds for cross-validation
 num_folds = 5  # You can adjust the number of folds as needed
 
-# define the cross-validation strategy
+# Define the cross-validation strategy
 kf = KFold(n_splits=num_folds, shuffle=True, random_state=42)
 
-# train model
+# Train model
 knn = KNeighborsClassifier(n_neighbors=5)
 
-# fit model
+# Fit model
 knn.fit(x_train, y_train)
 
-# Check if the K model is trained before performing cross-validation
+# Check if the model is trained before performing cross-validation
 if knn:
   try:
     # perform cross-validation for the Decision Tree model
@@ -26,13 +26,13 @@ if knn:
 else:
   print('KNN model was not successfully trained.')
 
-# print the cross-validation results
+# Print the cross-validation results
 print('Cross-Validation With Accuracy: {:.2f}% (+/- {:.2f}%)'.format(knn_accuracy.mean() * 100, knn_accuracy.std() * 2))
 print('Cross-Validation With Precision: {:.2f}% (+/- {:.2f}%)'.format(knn_precision.mean() * 100, knn_precision.std() * 2))
 print('Cross-Validation With Recall: {:.2f}% (+/- {:.2f}%)'.format(knn_recall.mean() * 100, knn_recall.std() * 2))
 print('Cross-Validation With F1-score: {:.2f}% (+/- {:.2f}%)'.format(knn_f1score.mean() * 100, knn_f1score.std() * 2))
 
-# print time
-knn2_seconds = time.time() - start_time
-minutes = knn2_seconds / 60
+# Print time
+knn_seconds = time.time() - start_time
+minutes = knn_seconds / 60
 print('Time to run: {:.2f} seconds'.format(knn2_seconds), '({:.2f} minutes)'.format(minutes))
