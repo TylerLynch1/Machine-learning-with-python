@@ -7,7 +7,7 @@ knn = KNeighborsClassifier(n_neighbors=5)
 # Fit model
 knn.fit(x_train, y_train)
 
-# Check if the K-Nearest Neighbors model is trained before making predictions
+# Check if the model is trained before making predictions
 if knn:
   try:
     print('K-Nearest Neighbors model trained!')
