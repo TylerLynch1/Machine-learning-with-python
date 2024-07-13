@@ -13,7 +13,7 @@ dt = DecisionTreeClassifier(random_state=42)
 # Train model
 dt.fit(x_train, y_train)
 
-# Check if the Decision Tree model is trained before performing cross-validation
+# Check if the model is trained before performing cross-validation
 if dt:
   try:
     # perform cross-validation for the Decision Tree model
