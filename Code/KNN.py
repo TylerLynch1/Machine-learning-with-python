@@ -1,10 +1,12 @@
+# Record the start time for measuring training duration
 start_time = time.time()
-# |------------------------------------------------------ K-Nearest Neighbors Classification ------------------------------------------------------|
+
 # train model
 knn = KNeighborsClassifier(n_neighbors=5)
 # fit model
 knn.fit(x_train, y_train)
-# |------------------------------------------------------ CALCULATE STATISTICS ------------------------------------------------------|
+
+# Check if the K-Nearest Neighbors model is trained before making predictions
 if knn:
   try:
     print('K-Nearest Neighbors model trained!')
